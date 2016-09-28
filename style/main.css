@@ -73,6 +73,7 @@ header .top-right > ul > li:last-child img {
   font-weight: bold;
 }
 #content {
+  min-width: 1366px;
   position: relative;
 }
 #content #main-top {
@@ -116,9 +117,14 @@ header .top-right > ul > li:last-child img {
   font-size: 14px;
   padding: 0 10px;
 }
+#content #main-top #search #search-icon {
+  position: absolute;
+  left: 15px;
+  top: 67px;
+}
 #content #main-top #search #camera {
   position: absolute;
-  left: 474px;
+  right: 176px;
   top: 69px;
 }
 #content #main-top #search button {
@@ -499,7 +505,7 @@ header .top-right > ul > li:last-child img {
 #content #main-right .Rtag-2 dl {
   cursor: pointer;
   background-color: #fff;
-  margin: 1px;
+  border: 1px #f5f5f5 solid;
   float: left;
   height: 73px;
   width: 71px;
@@ -515,6 +521,7 @@ header .top-right > ul > li:last-child img {
   overflow: hidden;
   width: 290px;
   border: 1px solid #FF4400;
+  border-top: none;
   background-color: #fff;
   position: absolute;
   top: 75px;
@@ -589,6 +596,7 @@ header .top-right > ul > li:last-child img {
   overflow: hidden;
   width: 290px;
   border: 1px solid #FF4400;
+  border-top: none;
   background-color: #fff;
   position: absolute;
   top: 75px;
@@ -663,6 +671,7 @@ header .top-right > ul > li:last-child img {
   overflow: hidden;
   width: 290px;
   border: 1px solid #FF4400;
+  border-top: none;
   background-color: #fff;
   position: absolute;
   top: 75px;
@@ -737,6 +746,7 @@ header .top-right > ul > li:last-child img {
   overflow: hidden;
   width: 290px;
   border: 1px solid #FF4400;
+  border-top: none;
   background-color: #fff;
   position: absolute;
   top: 75px;

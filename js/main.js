@@ -170,6 +170,21 @@ $(function(){
     		
     	});
     })
+    //input默认值
+    $('#search>input').focus(function(){
+    	var search_txt = $(this).val();
+    	if(search_txt==this.defaultValue){
+    		$('#search-icon').hide();
+    		$(this).val("");
+    	}
+    })
+    $('#search>input').blur(function(){
+    	var search_txt = $(this).val();
+    	if(search_txt==""){
+    		$(this).val(this.defaultValue);
+    		$('#search-icon').show();
+    	};
+    })
     //按钮
     $('#focusImg-1 .buttons span').each(function(index,element){
     	$(this).click(function(){
@@ -321,6 +336,15 @@ $(function(){
     $("#main-right>.Rtag-2>dl:lt(4)").each(function(index,element){
 	  	var $tag2 = $("#Rtag-2-bg"+(index+1));
 	  	$(this).mouseover(function(){
+	  		$("#main-right>.Rtag-2>dl:lt(4)").css({
+	  			"border":"none",
+	  			"border-bottom":"1px red solid"
+	  		})
+	  		$(this).css({
+	  			"border":"1px red solid",
+	  			"border-bottom":"none",
+	  			"margin-top":"-2px"
+	  		});
 	  		$(".Rtag-2-bg").hide();
 	  		$tag2.show();
 	  	})
